@@ -1,0 +1,108 @@
+/*container*/
+.container {
+    width: 100%;
+    margin: 2rem 0.5rem;
+    display: flex;
+}
+
+/*baslik*/
+.baslik {
+    display: flex;
+    justify-content:space-between;
+    height: 10%;
+}
+
+.baslik a {
+    text-decoration: none;
+    color: grey;
+}
+
+/*kitaplar*/
+.kitaplar {
+    height: 30rem;
+    width: 75%;
+    border: 1px grey solid;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.kitaplar .kitap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+
+.kitaplar .kitap a {
+    border-radius: 1rem;
+    width: 9rem;
+    height: 100%;
+    margin: 0 0.5rem;
+    background-position: center;
+    transition: all .8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+
+.kitaplar .kitap a:hover {
+    width: 15rem;
+}
+
+/*yazarlar*/
+.yazarlar {
+    height: 30rem;
+    width: 25%;
+    border: 1px grey solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+.yazarlar .yazar {
+    width: 95%;
+}
+
+.yazarlar .yazar a {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 100%;
+    border: 0.5px grey solid ;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    align-items: center;
+}
+
+.yazarlar .yazar a img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.yazarlar .yazar a h5 {
+    text-align: center;
+}
+
+@media(max-width:990px) {
+    .container {
+        display: block;
+    }
+
+    .kitaplar {
+        height: 20rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .yazarlar {
+        height: max-content;
+        width: 90%;
+    }
+    
+    .yazarlar .yazar a img {
+        height: 70px;
+        width: 30%;
+    }
+}
